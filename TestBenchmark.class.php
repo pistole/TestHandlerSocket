@@ -16,6 +16,10 @@ class TestBenchmark
 	protected function testSql($key, $forceNew = false, $size)
 	{
 		$db = DbWrapper::getInstance($forceNew);
+		if ($forceNew)
+		{
+			$db->selectDb('test_handlersocket');
+		}
 		$sql = '
 			SELECT SQL_NO_CACHE
 				*

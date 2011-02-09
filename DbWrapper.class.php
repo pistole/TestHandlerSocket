@@ -8,7 +8,7 @@ class DbWrapper
 	private function __construct()
 	{
 		$this->connection = mysql_connect('localhost', 'root', '');
-		mysql_select_db('test', $this->connection);
+		mysql_select_db('test_handlersocket', $this->connection);
 	}
 	
 	public function query($sql)

@@ -1,0 +1,2 @@
+THIS IS A TEST BENCHMARK FOR HANDLERSOCKET VS STRAIGHT SQL
+usage: ./test_hs.php [--create] [--count=10000]

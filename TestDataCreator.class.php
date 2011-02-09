@@ -46,9 +46,9 @@ class TestDataCreator
 			for ($i = 0; $i < $chunkCount; $i++)
 			{
 				$row = array(
-					$db->quote(randString(200)),
+					$db->quote($this->randString(200)),
 					rand(),
-					$db->quote(randString(1000)),
+					$db->quote($this->randString(1000)),
 					);
 
 				$rowsArry[] = '(' . implode(', ', $row ) . ')';
